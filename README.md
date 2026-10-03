@@ -17,6 +17,7 @@ NumPy/SciPy and [PyWavelets](https://pywavelets.readthedocs.io/).
 | `notebooks/`         | Demo Jupyter notebooks, one per lab, calling `wavelets_lab`.    |
 | `tests/`             | `pytest` test suite, one test file per module.                  |
 | `docs/`              | Syllabus, week-by-week schedule and other course documents.     |
+| `requirements.txt`   | Packages to install in a virtual environment (`pip install -r`). |
 
 Every directory contains a `README.md` describing its contents.
 
@@ -34,6 +35,13 @@ editable mode together with the development tools:
 
 ```bash
 pip install -e ".[dev]"
+```
+
+Equivalently, install everything from `requirements.txt`, which lists the
+same packages and installs `wavelets_lab` in editable mode:
+
+```bash
+pip install -r requirements.txt
 ```
 
 Start Jupyter to work with the notebooks:

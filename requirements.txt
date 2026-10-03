@@ -1,0 +1,22 @@
+# Environment for the wavelet analysis lab course (Python 3.10 or newer).
+# Install inside an activated virtual environment from the repository root:
+#     pip install -r requirements.txt
+# The list mirrors pyproject.toml: runtime dependencies, development tools,
+# and the wavelets_lab package itself in editable mode.
+
+# Runtime dependencies
+numpy
+scipy
+matplotlib
+PyWavelets
+scikit-image
+imageio
+
+# Development tools: tests, linting, type checking, notebooks
+pytest
+ruff
+mypy
+jupyterlab
+
+# The course package (src/wavelets_lab), editable
+-e .
