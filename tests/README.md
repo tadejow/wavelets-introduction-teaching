@@ -18,4 +18,11 @@ pytest
 
 ## Contents
 
-No tests yet; they will be added together with the modules.
+| File              | Module tested                |
+|-------------------|------------------------------|
+| `test_images.py`  | `wavelets_lab.images`        |
+| `test_filters.py` | `wavelets_lab.filters`       |
+| `test_edges.py`   | `wavelets_lab.edges`         |
+| `test_hilbert.py` | `wavelets_lab.hilbert`       |
+| `test_fourier.py` | `wavelets_lab.fourier`       |
+| `test_sampling.py`| `wavelets_lab.sampling`      |
