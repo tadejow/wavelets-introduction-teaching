@@ -1,0 +1,47 @@
+Informacje ogólne
+Kod przedmiotu:	28-MT-S-tWDZAnFalk
+Kod Erasmus / ISCED:	11.1 
+ / (brak danych)
+Nazwa przedmiotu:	Wstęp do zastosowań analizy falkowej
+Jednostka:	Instytut Matematyczny
+Grupy:	Zaawansowane przedmioty do wyboru (M)
+Punkty ECTS i inne:	6.00 
+
+zobacz reguły punktacji
+Język prowadzenia:	angielski
+Rodzaj przedmiotu (MT):	
+wykład
+
+Założenia:	
+Analiza matematyczna 2 28-MT-S-oAnMat2
+
+Skrócony opis:	
+Celem przedmiotu jest poznanie przez studentów teoretycznych aspektów analizy falkowej, czyli nowoczesnego sposobu analizy sygnałów oraz nabycie umiejętności implementacji podstawowych związanych z analizą falkową algorytmów w systemie Matlab.
+
+Pełny opis:	
+1. Podstawowe narzędzia w przestrzeni Hilberta, bazy ortonormalne i Riesza, rozpięcia, sumy proste, twierdzenie Plancherela.
+2. Podstawowe pojęcia analizy harmonicznej, szeregi Fouriera, transformata Fouriera, twierdzenie Plancherela na prostej.
+3. Pojęcie analizy wielorozdzielczej, konstrukcja bazy falkowej, dyskretna transformata falkowa.
+4. Konstrukcja analizy wielorozdzielczej Daubechies.
+5. Inne transformaty: lokalna transformata Fouriera, transformata Zaka, transformata Radona, transformata Hougha.
+6. Algorytmy numeryczne: algorytm Mallata, FFT, algorytm kaskadowy, tw. Shannona o próbkowaniu.
+
+Literatura:	
+Stephane Mallat, A wavelet tour of signal processing, Academic Press, London 1999
+Materiały dydaktyczne:
+Listy zadań i notatki do wykłady udostępniane przez prowadzącego.
+
+Efekty uczenia się:	
+Wiedza:
+– Zna i rozumie podstawowe pojęcia i metody analizy funkcjonalnej i analizy harmonicznej wykorzystywane w analizie falkowej.
+– Zna i rozumie podstawowe pojęcia, metody i twierdzenia analizy falkowej.
+– Zna i rozumie wybrane algorytmy numeryczne.
+Umiejętności:
+– Potrafi wygenerować kod Matlaba dokonujący transformaty falkowej skończonego sygnału 1 lub 2 wymiarowego, przy różnych filtrach.
+– Potrafi wygenerować kod Matlaba implementujący falkowe algorytmy odszumiania i kompresji sygnałów 1 i 2 wymiarowych.
+– Potrafi rozłożyć sygnał skończony 1 lub 2 wymiarowy w zadanej bazie ortonormalnej lub Riesza.
+Kompetencje społeczne:
+– Rozumie rolę wiedzy w rozwiązywaniu problemów o charakterze poznawczym i praktycznym.
+
+Metody i kryteria oceniania:	
+Warunkiem zaliczenia przedmiotu jest uzyskanie minimum punktowego za zadania stanowiące bieżącą weryfikację efektów kształcenia (sprawdziany pisemne i projekt programistyczny) oraz uzyskanie pozytywnej oceny z egzaminu stanowiącego końcową weryfikację efektów kształcenia.
