@@ -13,6 +13,16 @@ and `topic` is a short snake_case description, e.g. `01_images.ipynb`,
 - Notebooks contain no function definitions: they import and call functions
   from the `wavelets_lab` package (`src/wavelets_lab/`).
 - All text and code are in English.
+- Every plot has labelled X and Y axes (with units where they exist).
+  `images.show_image` labels image axes in pixels by default and accepts
+  `xlabel`/`ylabel` for other quantities (frequencies, angles, …).
+- Every heading is followed by three paragraphs: **What we do.**,
+  **What to expect.** and **How to read the code.**
+- Every notebook ends with a section *Reference: scripts and functions used
+  in this notebook*: a table of the library functions called directly, and for
+  every `wavelets_lab` function used (including the ones it calls internally)
+  its module file, purpose, input, output and a step-by-step recipe detailed
+  enough to rewrite the function without seeing its source.
 - Clear outputs before committing, unless a figure is part of the material.
 
 ## Contents

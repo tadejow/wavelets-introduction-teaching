@@ -4,6 +4,7 @@ from pathlib import Path
 
 import numpy as np
 import pytest
+from matplotlib.figure import Figure
 
 from wavelets_lab import images
 
@@ -81,6 +82,16 @@ def test_mirror_extend_shape() -> None:
     extended = images.mirror_extend(image)
     assert extended.shape == (2, 6)
     np.testing.assert_array_equal(extended[:, 3:], image[:, ::-1])
+
+
+def test_show_image_labels_axes() -> None:
+    """Displayed images have labelled axes, by default in pixels."""
+    ax = Figure().subplots()
+    images.show_image(np.zeros((4, 4)), "zeros", ax=ax)
+    assert ax.get_xlabel() == "column [pixel]"
+    assert ax.get_ylabel() == "row [pixel]"
+    images.show_image(np.zeros((4, 4)), ax=ax, xlabel="angle", ylabel="offset")
+    assert (ax.get_xlabel(), ax.get_ylabel()) == ("angle", "offset")
 
 
 def test_rectangle_mask() -> None:

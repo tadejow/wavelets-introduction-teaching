@@ -210,8 +210,10 @@ def show_image(
     title: str | None = None,
     ax: Axes | None = None,
     scaled: bool = False,
+    xlabel: str = "column [pixel]",
+    ylabel: str = "row [pixel]",
 ) -> Axes:
-    """Display an image with a 256-level grey colour map.
+    """Display an image with a 256-level grey colour map and labelled axes.
 
     Parameters
     ----------
@@ -224,6 +226,10 @@ def show_image(
     scaled : bool, optional
         If ``True``, stretch the greyscale range to the data (like Matlab's
         ``imagesc``); otherwise map ``[0, 255]`` to black and white.
+    xlabel : str, optional
+        Label of the horizontal axis; ``"column [pixel]"`` by default.
+    ylabel : str, optional
+        Label of the vertical axis; ``"row [pixel]"`` by default.
 
     Returns
     -------
@@ -245,7 +251,8 @@ def show_image(
         )
     if title is not None:
         ax.set_title(title)
-    ax.set_axis_off()
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
     return ax
 
 

@@ -182,8 +182,10 @@ def plot_time_frequency(
     frequencies: ArrayLike,
     values: ArrayLike,
     title: str | None = None,
+    xlabel: str = "time [s]",
+    ylabel: str = "frequency [Hz]",
 ) -> Axes:
-    """Draw a spectrogram or scalogram as a colour map.
+    """Draw a spectrogram or scalogram as a colour map with labelled axes.
 
     Parameters
     ----------
@@ -197,6 +199,10 @@ def plot_time_frequency(
         Array of shape ``(len(frequencies), len(times))``.
     title : str, optional
         Title of the plot.
+    xlabel : str, optional
+        Label of the horizontal axis; ``"time [s]"`` by default.
+    ylabel : str, optional
+        Label of the vertical axis; ``"frequency [Hz]"`` by default.
 
     Returns
     -------
@@ -206,8 +212,8 @@ def plot_time_frequency(
     ax.pcolormesh(
         np.asarray(times), np.asarray(frequencies), np.asarray(values), shading="auto"
     )
-    ax.set_xlabel("time")
-    ax.set_ylabel("frequency")
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
     if title is not None:
         ax.set_title(title)
     return ax

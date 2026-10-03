@@ -2,6 +2,7 @@
 
 import numpy as np
 import pytest
+from matplotlib.figure import Figure
 
 from wavelets_lab import timefreq
 
@@ -59,3 +60,12 @@ def test_cwt_frequency_of_scales() -> None:
     np.testing.assert_allclose(freqs, targets)
     energy = timefreq.power(coeffs).sum(axis=1)
     assert np.argmax(energy) == 1
+
+
+def test_plot_time_frequency_labels_axes() -> None:
+    """The time-frequency plot labels both axes with units."""
+    ax = Figure().subplots()
+    timefreq.plot_time_frequency(ax, [0.0, 1.0], [1.0, 2.0], np.ones((2, 2)), "map")
+    assert ax.get_xlabel() == "time [s]"
+    assert ax.get_ylabel() == "frequency [Hz]"
+    assert ax.get_title() == "map"
