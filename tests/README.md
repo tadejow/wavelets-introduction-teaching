@@ -18,11 +18,18 @@ pytest
 
 ## Contents
 
-| File              | Module tested                |
-|-------------------|------------------------------|
-| `test_images.py`  | `wavelets_lab.images`        |
-| `test_filters.py` | `wavelets_lab.filters`       |
-| `test_edges.py`   | `wavelets_lab.edges`         |
-| `test_hilbert.py` | `wavelets_lab.hilbert`       |
-| `test_fourier.py` | `wavelets_lab.fourier`       |
-| `test_sampling.py`| `wavelets_lab.sampling`      |
+| File                  | Module tested              |
+|-----------------------|----------------------------|
+| `test_images.py`      | `wavelets_lab.images`      |
+| `test_filters.py`     | `wavelets_lab.filters`     |
+| `test_edges.py`       | `wavelets_lab.edges`       |
+| `test_hilbert.py`     | `wavelets_lab.hilbert`     |
+| `test_fourier.py`     | `wavelets_lab.fourier`     |
+| `test_sampling.py`    | `wavelets_lab.sampling`    |
+| `test_timefreq.py`    | `wavelets_lab.timefreq`    |
+| `test_mra.py`         | `wavelets_lab.mra`         |
+| `test_dwt.py`         | `wavelets_lab.dwt`         |
+| `test_compression.py` | `wavelets_lab.compression` |
+| `test_denoising.py`   | `wavelets_lab.denoising`   |
+| `test_transforms.py`  | `wavelets_lab.transforms`  |
+| `test_timeseries.py`  | `wavelets_lab.timeseries`  |
